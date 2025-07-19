@@ -26,11 +26,6 @@ if "chat_history" not in st.session_state:
         {"role": "system", "content": "You are a helpful Python tutor. Only answer Python programming questions in a simple, clear way. If a question is not about Python, politely ask the student to ask about Python programming only."}
     ]
 
-# --- شعار Pythonic أعلى الصفحة ---
-logo = Image.open("pythonic_logo.png")
-st.image(logo, width=320)
-st.markdown("<h1 style='color:#353535; margin-top:-16px;'>Pythonic</h1>", unsafe_allow_html=True)
-st.markdown('<hr style="border:1.5px solid #1583e9; border-radius:6px;">', unsafe_allow_html=True)
 
 # --- بيانات الدروس مع روابط فيديو فقط ---
 lessons = [
