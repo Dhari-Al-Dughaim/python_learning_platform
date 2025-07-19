@@ -9,8 +9,9 @@ import openai
 from PIL import Image
 
 # إعداد مفتاح OpenAI مباشرة (غير آمن للنشر العام)
-OPENAI_API_KEY = "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"
-openai.api_key = OPENAI_API_KEY
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+client = openai.OpenAI(api_key=OPENAI_API_KEY)
+
 
 # تهيئة الجلسة
 if "progress" not in st.session_state:
